@@ -236,13 +236,13 @@ def get_subdir_and_modality(subjdir_path):
         if ('Accler' in file or 'MPRAGE' in file) and 'nii' in file:
             mri = os.path.join(subjdir_path, file)
             return mri, file
-
+###############################################################################
 python_file_path = '/media/icml/extremeSSD/all/preprocessing/pipelines'
 subj_path = '/home/icml/Desktop/preprocessing_check/rawdata'
 save_path = '/home/icml/Desktop/preprocessing_check/t1_volume_test'
 subj_list = os.listdir(subj_path)
 subj_list.sort()
-
+###############################################################################
 for subj in tqdm(subj_list):
     subj_folder = os.path.join(subj_path, subj)
     if not os.path.exists(os.path.join(save_path, subj)):

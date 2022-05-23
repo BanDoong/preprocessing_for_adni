@@ -51,12 +51,13 @@ def get_subdir_and_modality(subjdir_path):
             av1451 = os.path.join(subjdir_path, file)
     return mri, av45, av1451
 
-
+###############################################################################
 atlas_path = '/home/icml/Downloads/tpl-MNI152NLin2009cSym'
 template = os.path.join(atlas_path, 'mni_icbm152_t1_tal_nlin_sym_09c.nii')
 ref_crop = os.path.join(atlas_path, 'ref_cropped_template.nii.gz')
 subj_path = '/home/icml/Desktop/test'
 save_path = '/home/icml/Desktop/test_3'
+###############################################################################
 
 subj_list = os.listdir(subj_path)
 

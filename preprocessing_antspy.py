@@ -118,7 +118,7 @@ class Preprocessing_ANTs(object):
 
         # print('***********', fix, mov, os.path.join(self.save_path, subj), '************')
 
-
+###############################################################################
 # template, nii_directory, modality, path, args, fix_img, ref_crop, t1, pet, save_path
 atlas_path = '/home/icml/Downloads/tpl-MNI152NLin2009cSym'
 template = os.path.join(atlas_path, 'mni_icbm152_t1_tal_nlin_sym_09c.nii')
@@ -132,3 +132,4 @@ Preprocessing_ANTs(template=template, nii_directory=nii_diretory, modality=modal
 modality = 'pet'
 Preprocessing_ANTs(template=template, nii_directory=nii_diretory, modality=modality, ref_crop=ref_crop,
                    save_path=save_path)
+###############################################################################
